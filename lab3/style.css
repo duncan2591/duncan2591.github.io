@@ -1,0 +1,20 @@
+element.style {
+}
+.nav {
+    background-color: grey;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+* {
+    box-sizing: border-box;
+}
+nav {
+    display: block;
+}
+body {
+    margin: 0;
+    background-color: #f1f1f1;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+}
