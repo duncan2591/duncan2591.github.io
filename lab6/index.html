@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="icon" href="images/favicon.png" sizes="64x64" type="image/png"> 
+    <title>SHOPEE</title>
+    <style>
+
+      /* Box modal */
+      .modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);  
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+    </style>
+  </head>
+
+  <body>
+<!-- HEADER -->
+    
+<header class="header">
+      
+      <div class="topnav">
+      
+        <a><img src="images/logo.png.jpg" width="100" height="40"></a>
+        <button id="myBtn">Đăng ký thành viên</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+ 
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Đăng ký thành viên Shopee để nhận được nhiều ưu đãi.</p>
+  </div>
+       
+         
+        
+      </div>
+    </header>
+
+
+
+    <!-- NAV -->
+    <nav class="nav">
+      <div class="banner">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="index.html" class="menu-link">Đồ điện tử</a>
+            <ul class="sub-menu">
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Điện thoại</a>
+                <ul class="sub-menu">
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Samsung</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">LG</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Iphone</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Lenovo</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Nokia</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Sony</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">LG</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">VSMart</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">XIAOMI</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">BPhone</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">T-mobile</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Khác</a>
+              </li>
+            </ul>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Tablet</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Tai nghe</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Apple watch</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Máy quay</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Máy Ảnh</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Điện thoại bàn</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Máy in</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">PS5</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Gaming</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Loa</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Bàn phím</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="index.html" class="menu-link">Điện tử điện lạnh</a>
+            <ul class="sub-menu sub-menu2">
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Điện thoại cầm tay</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Máy tính bàn</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Thiết bị định vị</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Dàn âm thanh</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Điện thoại bàn</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">TV</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Cáp điện</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Multimedia</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Phần cứng</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Nguồn điện</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Phone &amp; Mic</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="index.html" class="menu-link">TV &amp;Thiết bị thông minh</a>
+            <ul class="sub-menu sub-menu3">
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Featured </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Bếp</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Máy giặt </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Vacuums &amp; Floor Care </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Điều hòa</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="index.html" class="menu-link">Sức khỏe</a>
+            <ul class="sub-menu sub-menu4">
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Chăm sóc da </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Son &amp; Chăm sóc môi </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Trang điểm da </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Trang điểm mắt </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Mỹ phẩm nam </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Tắm &amp; Chăm sóc cơ thể </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Chăm sóc tóc </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Chăm sóc răng miệng</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Nước hoa </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Dụng cụ làm đẹp </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Vitamin &amp; Thực phẩm </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Hoá Mỹ Phẩm &amp; Khác</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="index.html" class="menu-link">Đồ sơ sinh</a>
+            <ul class="sub-menu sub-menu5">
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Đồ dùng cho bé </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Tã &amp; Bỉm </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Ghế, Nôi, Cũi, Xe đẩy </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Quần Áo cho bé </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Đồ chơi </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="index.html" class="menu-link">Thức ăn thú cưng</a>
+            <ul class="sub-menu sub-menu6">
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Chó </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Mèo </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Cá </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Chim </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Khỉ </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Khác </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="index.html" class="menu-link">Lối sống</a>
+            <ul class="sub-menu sub-menu7">
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Thiết bị tiện ích </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Đồ dùng nhà bếp </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Chăn, Ga </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Tủ đựng &amp; Hộp lưu trữ |</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Đồ dùng phòng tắm </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Đồ nội thất </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Đèn </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Ngoài trời &amp; Sân vườn </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Khác </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="index.html" class="menu-link">Thời trang nữ</a>
+            <ul class="sub-menu sub-menu8">
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Áo </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Đầm </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Chân váy </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Quần </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Đồ bơi </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Trang phục thể thao </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Áo khoác &amp; Áo vest </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Thời trang bầu </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Phụ kiện may mặc </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Đồ ngủ &amp; Đồ mặc nhà </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Đồ đôi </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Khác</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="index.html" class="menu-link">Thời trang nam</a>
+            <ul class="sub-menu sub-menu9">
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Áo thun </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Áo sơ mi </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Áo khoác &amp; Áo vest </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Áo nỉ/ Áo len </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Quần </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Balo/ Túi/ Ví </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Mắt kính </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Phụ kiện nam </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Đồ Trung Niên </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Thắt Lưng </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Đồ lót </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Khác</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="index.html" class="menu-link">Thời trang cao cấp</a>
+            <ul class="sub-menu sub-menu10">
+              <li class="sub-iteam">
+                <a href=index.html" class="sub-link">Đồng hồ nam </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Đồng hồ nữ </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Đồng hồ trẻ em </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Khác</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="index.html" class="menu-link">Thể thao và du lịch</a>
+            <ul class="sub-menu sub-menu11">
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Trang Phục thể thao </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Giày Thể Thao </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Phụ Kiện Thể Thao </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Thể Thao &amp; Thể Hình</a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Thể thao ngoài trời </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Thể thao dưới nước </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Hoạt Động Dã Ngoại </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Balo/ Túi </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Indoor Sports </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Vali/ Hành lý </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Các Môn Thể Thao Khác </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Khác</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="index.html" class="menu-link">Phụ tùng</a>
+            <ul class="sub-menu sub-menu12">
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Mô tô, xe máy </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Xe đạp, xe điện </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Chăm sóc, sửa chữa xe </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Chăm sóc ô tô </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Mũ bảo hiểm </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Phụ kiện xe máy </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Phụ tùng xe máy </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Chăm sóc xe máy </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Xe Ô tô </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Độ xe </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link"> Xe Đạp </a>
+              </li>
+              <li class="sub-iteam">
+                <a href="index.html" class="sub-link">Khác</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <img src="images/banner.jpg" alt=" LOADING... ">
+      </div>
+    </nav>
+    
+    
+
+    <section class="section">
+      <div class="most-popular">
+        <div class="title">
+          <h2 style="word-spacing: 0ch">SẢN PHẨM BÁN CHẠY</h2>
+        </div>
+
+        <div class="content">
+          <div class="box hieuung">
+            <img src="images/1.jpg" alt="">
+            <p style="text-align: center">sales</p>
+            <p style="word-spacing: 0ch; text-align: center">Sản phẩm bán chạy</p>
+          </div>
+
+          <div class="box hieuung">
+            <img src="images/2.jpg" alt="" style="height: 170px">
+            <p style="text-align: center">sales</p>
+            <p style="word-spacing: 0ch; text-align: center">Sản phẩm bán chạy</p>
+          </div>
+          <div class="box hieuung">
+            <img src="images/3.jpg" alt="" style="height: 170px">
+            <p style="text-align: center">sales</p>
+            <p style="word-spacing: 0ch; text-align: center">Sản phẩm bán chạy</p>
+          </div>
+          <div class="box hieuung">
+            <img src="images/4.jpg" alt="" style="height: 170px; text-align: center">
+            <p style="text-align: center; word-spacing: 0ch">sales</p>
+            <p style="word-spacing: 0ch; text-align: center">Sản phẩm bán chạy</p>
+          </div>
+          <div class="box hieuung">
+            <img src="images/5.jpg" alt="" style="height: 170px">
+            <p style="text-align: center; word-spacing: 0ch">sales</p>
+            <p style="word-spacing: 0ch; text-align: center">Sản phẩm bán chạy</p>
+          </div>
+        </div>
+      </div>
+
+
+<br>
+<br>
+
+<br>
+<hr>
+      <div class="collections">
+       <div class="title">
+          <h2 style="word-spacing: 0ch">SIÊU KHUYẾN MÃI</h2>
+        </div>
+
+        
+          
+          <div class="content-1">
+            <div class="tren">
+              <div class="tren-1">
+                <img src="images/a1.jpg" alt="" style="height:165px
+                ;margin-left:30px">
+                <h3 style="text-align: center; color: rgb(38, 0, 255) ; font-family:Arial, Helvetica, sans-serif;">Chất lượng cao</h3>
+              </div>
+              
+              <div class="tren-2">
+                <img src="images/a2.jpg" alt="" style="height:165px
+                ;margin-left:30px">
+                <h3 style="text-align: center; color: rgb(38, 0, 255) ;font-family:Arial, Helvetica, sans-serif;">Chất lượng cao</h3>
+              </div>
+              
+              <div class="tren-3">
+                <img src="images/a3.jpg" alt="" style="height:165px
+                ;margin-left:30px">
+                <h3 style="text-align: center; color: rgb(38, 0, 255) ; font-family:Arial, Helvetica, sans-serif;">Chất lượng cao</h3>
+              </div>
+              
+              <div class="tren-4">
+                <img src="images/a4.jpg" alt="" style="height:165px
+                ;margin-left:30px">
+                <h3 style="text-align: center; color: rgb(38, 0, 255);font-family:Arial, Helvetica, sans-serif;">Chất lượng cao</h3>
+              </div>
+            </div>
+            
+            <div class="duoi">
+              <div class="duoi-1">
+                <img src="images/a5.jpg" alt="" style="height:165px
+                ;margin-left:30px">
+                <h3 style="text-align: center; color: rgb(38, 0, 255);font-family:Arial, Helvetica, sans-serif;">
+                  Chất lượng cao
+                </h3>
+              </div>
+              
+              <div class="duoi-2">
+                <img src="images/a6.jpg" alt="" style="height:165px
+                ;margin-left:30px">
+                <h3 style="text-align: center; color: rgb(38, 0, 255);font-family:Arial, Helvetica, sans-serif;">Chất lượng cao</h3>
+              </div>
+                
+                <div class="duoi-3">
+                <img src="images/a1.jpg" alt="" style="height:165px
+                ;margin-left:30px">
+                <h3 style="text-align: center; color: rgb(38, 0, 255);font-family:Arial, Helvetica, sans-serif;">Chất lượng cao</h3>
+              </div>
+              
+              <div class="duoi-4">
+                <img src="images/a8.jpg" alt="" style="height:165px
+                ;margin-left:30px">
+                <h3 style="text-align: center; color: rgb(38, 0, 255);font-family:Arial, Helvetica, sans-serif;">Chất lượng cao</h3>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+<br>
+
+
+<hr>
+<br>
+<br>
+<div><h2>ĐƯỢC BÌNH CHỌN NHIỀU NHẤT</h2></div>
+      <div class="for-you">
+        <div class="hang1">
+          <div class="hang1-1 hieuung hieuung-1 ">
+            <img style="width: 100%; height: 175px" src="images/11.jpg" alt="">
+            <p style="text-align: center">Hàng bán chạy</p>
+            <p style="color: red; text-align: center">made in Vietnam</p>
+          </div>
+          <div class="hang1-2 hieuung hieuung-1 ">
+            <img style="width: 100%; height: 175px" src="images/8.jpg" alt="">
+            <p style="text-align: center">>Hàng bán chạy</p>
+             <p style="color: red; text-align: center">made in Vietnam</p>
+          </div>
+            
+          <div class="hang1-3 hieuung hieuung-1 ">
+            <img style="width: 100%; height: 175px" src="images/14.jpg" alt="">
+            <p style="text-align: center">Hàng bán chạy</p>
+            <p style="color: red; text-align: center">made in Vietnam</p>
+          </div>
+          <div class="hang1-4 hieuung hieuung-1 ">
+            <img style="width: 100%; height: 175px" src="images/4.jpg" alt="">
+            <p style="text-align: center">Hàng bán chạy</p>
+            <p style="color: red; text-align: center">made in Vietnam</p>
+          </div>
+          <div class="hang1-5 hieuung hieuung-1 ">
+            <img style="width: 100%; height: 175px" src="images/1.jpg" alt="">
+            <p style="text-align: center">Hàng bán chạy</p>
+            <p style="color: red; text-align: center">made in Vietnam</p>
+          </div>
+          <div class="hang1-6 hieuung hieuung-1 ">
+            <img style="width: 100%; height: 175px" src="images/13.jpg" alt="">
+            <p style="text-align: center">Hàng bán chạy</p>
+            <p style="color: red; text-align: center">made in Vietnam</p>
+          </div>
+        </div>
+        <div class="hang2">
+          <div class="hang2-1 hieuung hieuung-1 ">
+            <img style="width: 100%; height: 175px" src="images/12.jpg" alt="">
+            <p style="text-align: center">Hàng bán chạy</p>
+            <p style="color: red; text-align: center">made in Vietnam</p>
+          </div>
+          <div class="hang2-2 hieuung hieuung-1 ">
+            <img style="width: 100%; height: 175px" src="images/10.jpg" alt="">
+            <p style="text-align: center">Hàng bán chạy</p>
+            <p style="color: rgb(255, 0, 0); text-align: center">made in Vietnam</p>
+          </div>
+          <div class="hang2-3 hieuung hieuung-1 ">
+            <img style="width: 100%; height: 175px" src="images/8.jpg" alt="">
+            <p style="text-align: center">Hàng bán chạy</p>
+            <p style="color: red; text-align: center">made in Vietnam</p>
+          </div>
+          <div class="hang2-4 hieuung hieuung-1 ">
+            <img style="width: 100%; height: 175px" src="images/2.jpg" alt="">
+            <p style="text-align: center">Hàng bán chạy</p>
+            <p style="color: red; text-align: center">made in Vietnam</p>
+          </div>
+          <div class="hang2-5 hieuung hieuung-1 ">
+            <img style="width: 100%; height: 175px" src="images/5.jpg" alt="">
+            <p style="text-align: center">Hàng bán chạy</p>
+            <p style="color: red; text-align: center">made in Vietnam</p>
+          </div>
+          <div class="hang2-6 hieuung hieuung-1 ">
+            <img style="width: 100%; height: 175px" src="images/8.jpg" alt="">
+            <p style="text-align: center">Hàng bán chạy</p>
+            <p style="color: red; text-align: center">made in Vietnam</p>
+          </div>
+        </div>
+        <br> 
+       
+        <p><img src="images/banner3.jpg" width="1200" height="300" ></p>
+      
+    </section>
+    <footer class="footer" style="text-align: center; margin-top: 10px;">
+     <h4 style="padding-top: 15px;"> Bản quyền thuộc về Shopee</h4>
+    </footer>
+
+    <div class="fixed">
+      <a href="#">  <img src="images/back.png" alt="" style="width:70px;border-radius: 15px 50px 30px;"></a>
+    </div>
+
+  
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+
+
+</body>
+</html>
