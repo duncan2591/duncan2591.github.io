@@ -1,61 +1,28 @@
-div {
-    width: 100px;
-    height: 100px;
-    z-index: 0;
-  }
-  .static {
-    position: static;
-    background: yellow;
-  }
-  .relative {
-    position: relative;
-    background: red;
-    top: 100px;
-    left: 100px;
-    z-index: index -1;
-  }
-  .absolute {
-    position: absolute;
-    z-index: 0;
-    bottom: 10px;
-    right: 10px;
-    background: blue;
-  }
-  
-  .menu {
-    word-spacing: -1ch;
-  }
-  .menu-item {
-    word-spacing: normal;
-    display: inline-block;
-  }
-  .menu-link {
-    display: block;
-    text-decoration: none;
-    padding: 10px;
-    background: blue;
-    color: white;
-  }
-  .menu-link.active {
-    background: yellow;
-    color: black;
-  }
-  
-  .sub-menu {
-    display: none;
-    position: absolute;
-  }
-  
-  .menu-link:hover {
-    background-color: chocolate;
-    color: black;
-  }
-  .menu-link:hover + .sub-menu {
-    display: black;
-  }
-  .menu-link.active {
-    background: yellow;
-    color: black;
-  }
-  
-  
+.flex-container{
+  display:flex;
+
+  flex-direction: row; 
+  /* column; row-reverse; column-reverse; */
+
+  flex-wrap: wrap;  
+  /* nowrap */
+height: 500px;
+  justify-content: flex-start;
+
+  align-items: stretch;
+}
+
+
+.flex-item{
+  order: 0;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis:auto;
+  align-self: auto;
+  width: 200px;
+  background-color: red;
+}
+
+.three{
+  flex
+}
